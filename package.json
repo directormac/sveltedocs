@@ -1,0 +1,30 @@
+{
+  "name": "docs",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "vite dev --host --open --port 5000",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "prettier --check --ignore-path=../../.prettierignore . && eslint src",
+    "format": "prettier --write --ignore-path=../../.prettierignore ."
+  },
+  "devDependencies": {
+    "eslint-config-custom": "workspace:*",
+    "@sveltejs/adapter-static": "^2.0.3",
+    "@sveltejs/kit": "^1.22.6",
+    "@sveltepress/theme-default": "^1.18.1",
+    "@sveltepress/vite": "^0.27.1",
+    "@types/node": "^20.5.1",
+    "mermaid": "^10.3.1",
+    "remark-mermaidjs": "^5.0.1",
+    "svelte": "^4.2.0",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.9"
+  },
+  "type": "module",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@playwright/test": "^1.37.1"
+  }
+}
